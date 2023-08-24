@@ -1,0 +1,14 @@
+.noticeArea {
+    margin-top:120px !important;
+    margin-bottom:0 !important;
+  
+    .list{
+        margin-top:25px;
+        display: flex;
+        justify-content: space-between;
+  
+        & > div{
+          width:50%;
+        }
+    }
+  }

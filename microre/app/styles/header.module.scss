@@ -1,0 +1,50 @@
+.header {
+    height: 440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('/bg.jpg') no-repeat;
+    background-size:cover;
+
+    img{
+        width:199px;
+    }
+
+    h1{
+        color:#fff;
+        font-size:48.3px;
+        margin-top:29px;
+        font-weight: 500;
+    }
+
+    a{
+        position: absolute;
+        right:30px;
+        top:30px;
+        color:#fff;
+    }
+
+}
+
+@media only screen and (max-width:768px){
+    .header {
+        height:118px;
+
+        img{
+            width:84px;
+        }
+
+        h1{
+            font-size:20px;
+            margin-top:12px;
+        }
+
+        a{
+            right:10px;
+            top:10px;
+        }
+    }
+}

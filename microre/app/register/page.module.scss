@@ -1,0 +1,573 @@
+.wrap {
+    width: 100%;
+    max-width: 1224px;
+    margin: 0 auto;
+
+    section {
+        margin-top: 128px;
+    }
+}
+
+.formArea {
+
+    input[type=text],
+    input[type=date],
+    input[type=number],
+    input[type=file],
+    select {
+        border: 1px solid #e1e2e3;
+        font-size: 17px;
+        padding: 9px 38px;
+        color: black;
+
+        &::placeholder {
+            color: #939597;
+        }
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 28px;
+
+        label {
+            flex-basis: 33%;
+            font-size: 25px;
+            color: #58595b;
+            position: relative;
+            transform: translateY(10px);
+
+            &::before {
+                content: url('/arrow.jpg');
+                display: inline-block;
+                transform: translateY(3px);
+                margin-right: 29px;
+            }
+        }
+
+
+        &>div {
+            width: 66.66%;
+        }
+
+        &:nth-of-type(1) {
+            &>div {
+                display: flex;
+                gap: 10px;
+
+                input {
+                    text-align: center;
+                    width: 33.33%;
+                }
+            }
+        }
+
+        &:nth-of-type(2) {
+            width: 100%;
+
+            &>div {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                &>div {
+                    display: flex;
+                    gap: 10px;
+
+                    input {
+                        box-sizing: border-box;
+                        width: 50%;
+                    }
+
+                    button {
+                        border: 1px solid var(--primary);
+                        background-color: #fff;
+                        color: var(--primary);
+                        width: 50%;
+                    }
+                }
+            }
+            
+        }
+
+        &:nth-of-type(3) {
+            &>div {
+                select {
+                    appearance: none;
+                    width: 100%;
+                    background: url("/select_arrow.jpg") no-repeat;
+                    background-position: right 38px center;
+                }
+            }
+        }
+        &:nth-of-type(4) {
+            &>div {
+                input {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+        }
+
+        &:nth-of-type(5) {
+            &>div {
+                input {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+        }
+
+        &:nth-of-type(6) {
+            &>div {
+                input {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+        }
+
+        &:nth-of-type(7) {
+            &>div {
+                input {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+        }
+
+        &:nth-of-type(8) {
+            &>div {
+                select {
+                    appearance: none;
+                    width: 100%;
+                    background: url("/select_arrow.jpg") no-repeat;
+                    background-position: right 38px center;
+                }
+            }
+        }
+
+        &:nth-of-type(9) {
+            &>div {
+                .vinput {
+                    display: flex;
+                    justify-content: space-between;
+                    border: 1px solid #e1e2e3;
+                    font-size: 17px;
+                    padding: 13px 38px;
+                    cursor: pointer;
+                }
+
+                input {
+                    width: 0%;
+                    position: absolute;
+                    margin: 0;
+                    padding: 0;
+                    opacity: 0;
+                    left: 0;
+                    top: 0;
+                }
+
+                .desc {
+                    margin-top: 16px;
+                }
+            }
+        }
+
+    }
+
+    .moTable {
+        display: none;
+    }
+
+    .pcTable {
+        font-size: 15px;
+        font-weight: normal;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        thead {
+            background-color: var(--bg-gray);
+            border-top: 1px solid #000;
+            border-bottom: 1px solid var(--gray);
+
+            tr {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            th {
+                padding: 10px 0;
+                font-weight: normal;
+                text-align: center;
+                flex-basis: calc(100%/3);
+            }
+        }
+
+        tbody {
+            width: 100%;
+            border-bottom: 1px solid var(--gray);
+
+            tr {
+                display: flex;
+                flex-direction: row;
+            }
+
+            tr {
+                display: flex;
+
+                td {
+                    padding: 10px 0;
+                    text-align: center;
+                    flex-basis: calc(100%/3);
+                    font-size: 17px;
+                }
+            }
+
+        }
+    }
+
+    .personal {
+        margin-top: 16px;
+        padding-left: 34px;
+
+        P {
+            &::before {
+                content: '-';
+                margin-right: 14px;
+            }
+        }
+
+        label {
+            &::before {
+                display: none;
+            }
+        }
+
+        p,
+        label {
+            line-height: 27px;
+            font-size: 17px;
+            color: #808284;
+        }
+
+        input {
+            width: 17px;
+            height: 17px;
+            border-radius: 0;
+            border: 1px solid #c7c9cb;
+            transform: translateY(2px);
+        }
+    }
+
+    .require {
+
+        &::after {
+            content: '(필수)';
+            display: inline-block;
+            color: #f05a27;
+            top: 0;
+            left: 33px;
+            font-size:12px;
+            transform: translate(4px,-8px);
+        }
+    }
+}
+
+.buttonArea {
+    margin: 0 auto;
+    margin-top: 81px;
+    text-align: center;
+
+    button {
+        width: 100%;
+        max-width: 407px;
+        border: 0;
+        background: #4395d1;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 25px 0px;
+    }
+}
+
+.serialFind{
+    display: flex;
+    gap:10px;
+    & > div{
+        width:70%;
+        display: flex;
+
+        &:last-of-type{
+            width:30%;
+        }
+
+        button{
+            width:100%;
+            border: 1px solid var(--primary);
+            background-color: #fff;
+            color: var(--primary);
+        }
+    }
+}
+
+.serialFindView{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 110;
+    img{
+        max-width: 100%;
+    }
+}
+.mask{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(255,255,255,0.3);
+    z-index: 100;
+}
+
+
+.recallTypeDesc{
+    margin-top:10px;
+    line-height: 1.5rem;
+}
+
+@media only screen and (max-width:768px) {
+    .wrap {
+        section {
+            margin-top: 40px;
+            padding: 0 10px;
+        }
+    }
+
+    .formArea {
+
+        input[type=text],
+        input[type=date],
+        input[type=number],
+        input[type=file],
+        select {
+            font-size: 10px;
+            padding: 6px 22px;
+            color: black;
+        }
+
+        li {
+            flex-wrap: wrap;
+            margin-bottom: 22px;
+
+            label {
+                flex-basis: 100%;
+                font-size: 14px;
+                transform: translateY(0px);
+                font-weight: 500;
+                margin-bottom: 11px;
+
+
+                &::before {
+                    content: "";
+                    transform: translateY(2px);
+                    padding-right: 13px;
+                    margin-right: 0;
+                    background: url('/arrow.jpg') no-repeat;
+                    background-size: contain;
+                    width: 10px;
+                    height: 13px;
+                }
+            }
+
+
+
+
+            &>div {
+                width: 100%;
+            }
+
+            &:nth-of-type(1) {
+                &>div {
+                    flex-wrap: wrap;
+                    gap: 7px;
+
+                    input {
+                        text-align: center;
+                        width: calc(50% - 50px);
+
+                        
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+
+                &>div {
+                    gap: 7px;
+
+                    &>div {
+                        gap: 7px;
+
+                        input {
+                            font-size: 10px;
+                        }
+
+                        button {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(3) {
+                &>div {
+                    select {
+                        background: url("/select_arrow.jpg") no-repeat;
+                        background-position: right 22px center;
+                        background-size: 12px auto;
+                    }
+                }
+            }
+
+
+            &:nth-of-type(8) {
+                &>div {
+                    select {
+                        background: url("/select_arrow.jpg") no-repeat;
+                        background-position: right 22px center;
+                        background-size: 12px auto;
+                    }
+                }
+            }
+
+            
+
+            &:nth-of-type(9) {
+                &>div {
+                    .vinput {
+                        font-size: 10px;
+                        padding: 8px 22px;
+                    }
+
+                    .desc {
+                        margin-top: 10px;
+                        font-size: 10px;
+                    }
+                }
+            }
+
+        }
+
+        .moTable {
+            display: table;
+            border-top: 1px solid #000;
+            width: 100%;
+
+            tr {
+                border-bottom: 1px solid var(--gray);
+                width: 100%;
+
+                th,
+                td {
+                    font-size: 10px;
+                    padding: 9px 20px;
+                    width: auto;
+                }
+
+                th {
+                    background-color: var(--bg-gray);
+                    text-align: center;
+                }
+            }
+
+        }
+
+        .pcTable {
+            display: none;
+        }
+
+        .personal {
+            margin-top: 10px;
+            padding-left: 14px;
+
+            P {
+                &::before {
+                    margin-right: 0px;
+                }
+            }
+
+            label {
+                &::before {
+                    display: none;
+                }
+            }
+
+            p,
+            label {
+                line-height: 14px;
+                font-size: 10px;
+            }
+
+            input {
+                width: 12px;
+                height: 12px;
+                border-radius: 0;
+                border: 1px solid #c7c9cb;
+                transform: translateY(2px);
+                margin: 0;
+            }
+        }
+
+        .require {
+
+            &::after {
+                content: '(필수)';
+                color: #f05a27;
+                font-size:10px;
+                transform: translate(4px,-2px);
+            }
+        }
+    }
+
+    .buttonArea {
+        margin-top: 27px;
+
+        button {
+            width: calc(100% - 20px);
+            max-width: 100%;
+            font-size: 12px;
+            padding: 10px 0px;
+        }
+    }
+
+    .serialFind{
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+        & > div{
+            width:100%;
+            &:last-of-type{
+                width:100%;
+            }
+
+            button{
+                font-size:10px;
+                padding:6px 0px;
+            }
+        }
+    }
+
+    .serialFindView{
+        width:80%;
+    }
+
+    .recallTypeDesc{
+        font-size:10px;
+        line-height: 16px;
+    }
+}
