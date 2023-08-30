@@ -338,6 +338,10 @@
 .recallTypeDesc{
     margin-top:10px;
     line-height: 1.5rem;
+
+    a{
+        color: var(--primary);
+    }
 }
 
 @media only screen and (max-width:768px) {

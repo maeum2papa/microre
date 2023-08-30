@@ -170,7 +170,7 @@ export default function Home() {
         <section className={styles.descriptionArea}>
           <div>
             <div>
-              <h2 className={styles.h2}>마이크로 바이크 16인치 리콜 안내</h2>
+              <h2 className={styles.h2}>마이크로 바이크 16인치(1.0) 리콜 안내</h2>
               <p className={styles.pc}>안녕하세요 마이크로 바이크 입니다.<br/>
 마이크로 바이크 16인치 리콜 대상자 분들께서는<br/>
 아래의 안내(절차)에 따라 리콜 접수를 해주시기 바랍니다.<br/>

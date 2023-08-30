@@ -11,7 +11,7 @@ import { getCookie } from "../services/cookie"
 import { decrypt } from "../services/encrypt"
 
 export default function Register() {
-  const recallType = ["자가교체", "직원 방문 교체"]
+  const recallType = ["자가교체"]
   const store = ["온라인", "백화점", "공식대리점", "선물", "기타"]
   const [formData, setFormData] = useState({
     id:"",
@@ -342,9 +342,8 @@ export default function Register() {
 
                   <p className={styles.recallTypeDesc}>
                   *자가교체 : 교체 부품을 택배로 발송, 간단하게 직접 교체 가능합니다.<br/>
-                  *직원방문교체 : 방문일정(본사에서 안내전화 예정)에 맞추어 본사 직원 방문하여 교체<br/>
-                  &nbsp;&nbsp;(최소3주~4주 정도의 기간 소요 예정)<br/>
-                  *자가교체/직원방문교체 모두 부품은 택배로 발송됩니다.
+                  * 교체 영상 바로가기 <a href="https://youtu.be/aBk8yehW1iw?si=hz9p76F2q2b5rMkH" target="_blank" rel="noreferrer">https://youtu.be/aBk8yehW1iw?si=hz9p76F2q2b5rMkH</a><br/>
+                  * 교체 부품은 택배로 발송됩니다.
                   </p>
                 </div>
             </li>
